@@ -1,13 +1,15 @@
-# Railway Configuration
-# This file configures how Railway deploys the backend
+# Railway.toml - Alternative Railway configuration
+[[services]]
+name = "backend"
+source = "server"
+dockerfile = "server/Dockerfile"
 
-[build]
-builder = "dockerfile"
-dockerfilePath = "./server/Dockerfile"
+[[services]]
+name = "ai-engine"
+source = "ai_engine"
+dockerfile = "ai_engine/Dockerfile"
 
-[deploy]
-startCommand = "npm start"
-healthcheckPath = "/health"
-healthcheckTimeout = 100
-restartPolicyType = "on_failure"
-restartPolicyMaxRetries = 3
+[[services]]
+name = "frontend"
+source = "client"
+dockerfile = "client/Dockerfile"

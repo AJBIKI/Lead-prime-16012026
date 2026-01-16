@@ -4,11 +4,8 @@
 services:
   backend:
     build:
-      context: ./server
+      context: server
       dockerfile: Dockerfile
-    environment:
-      - PORT=5000
-      - NODE_ENV=production
     healthcheck:
       path: /health
       interval: 30s
@@ -17,10 +14,8 @@ services:
 
   ai-engine:
     build:
-      context: ./ai_engine
+      context: ai_engine
       dockerfile: Dockerfile
-    environment:
-      - PORT=8000
     healthcheck:
       path: /health
       interval: 30s
@@ -29,10 +24,8 @@ services:
 
   frontend:
     build:
-      context: ./client
+      context: client
       dockerfile: Dockerfile
-    environment:
-      - PORT=3000
     healthcheck:
       path: /
       interval: 30s
