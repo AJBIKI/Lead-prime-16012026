@@ -1,25 +1,55 @@
-# Render Configuration for Backend
-# https://render.com
-
 services:
+  # Backend Service
   - type: web
-    name: leadgen-backend
-    runtime: node
-    buildCommand: cd server && npm install
-    startCommand: cd server && npm start
+    name: lead-generator-backend
+    env: docker
+    dockerfilePath: ./server/Dockerfile
+    dockerContext: ./server
     envVars:
-      - key: NODE_ENV
-        value: production
       - key: PORT
         value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
     healthCheckPath: /health
-    
+
+  # AI Engine Service
   - type: web
-    name: leadgen-ai-engine
-    runtime: python
-    buildCommand: cd ai_engine && pip install -r requirements.txt && playwright install chromium --with-deps
-    startCommand: cd ai_engine && uvicorn main:app --host 0.0.0.0 --port $PORT
+    name: lead-generator-ai-engine
+    env: docker
+    dockerfilePath: ./ai_engine/Dockerfile
+    dockerContext: ./ai_engine
     envVars:
       - key: PORT
         value: 8000
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: SERP_API_KEY
+        sync: false
     healthCheckPath: /health
+
+  # Frontend Service
+  - type: web
+    name: lead-generator-frontend
+    env: docker
+    dockerfilePath: ./client/Dockerfile
+    dockerContext: ./client
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
+    healthCheckPath: /
