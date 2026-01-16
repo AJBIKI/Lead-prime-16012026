@@ -1,0 +1,22 @@
+langchain
+langgraph
+pinecone
+fastapi
+uvicorn
+python-dotenv
+pandas
+playwright
+beautifulsoup4
+duckduckgo-search
+pydantic
+
+# Phase 2: LLM Providers
+openai>=1.0.0
+google-generativeai
+huggingface-hub
+
+# Phase 2: Embeddings (lightweight, no C++ compiler needed)
+sentence-transformers
+
+# Note: ChromaDB removed due to Windows C++ compiler requirement
+# Will use simple in-memory vector storage for Phase 2

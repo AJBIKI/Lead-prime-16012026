@@ -1,0 +1,429 @@
+[
+    {
+        "id": "template_001",
+        "subject": "Quick question, [Name]",
+        "body": "Hi [Name],\n\nI came across [company] and noticed you're doing [something specific].\nWe help [target type] get [result] using [your solution].\n\nWould you be open to a 10-min call this week to see if it fits?\n\nThanks,\n[Your Name]\n[Company] | [Website]",
+        "category": "cold_outreach",
+        "tone": "professional",
+        "variables": [
+            "Name",
+            "company",
+            "something specific",
+            "target type",
+            "result",
+            "your solution",
+            "Your Name",
+            "Company",
+            "Website"
+        ]
+    },
+    {
+        "id": "template_002",
+        "subject": "Free idea for [Company]",
+        "body": "Hi [Name],\n\nI checked [company] and found one quick improvement: [specific suggestion].\nIf you want, I can share a few more ideas to help improve [metric: leads/sales/calls].\n\nWant me to send them?\n\nRegards,\n[Your Name]",
+        "category": "value_first",
+        "tone": "helpful",
+        "variables": [
+            "Company",
+            "Name",
+            "company",
+            "specific suggestion",
+            "metric",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_003",
+        "subject": "Fixing [pain point] for [industry]",
+        "body": "Hi [Name],\n\nMany [industry] teams struggle with [problem].\nWe help solve this by [how you solve], resulting in [result/benefit].\n\nIf this is relevant, I'd love to show you in a short call.\n\nBest,\n[Your Name]",
+        "category": "pain_point_focus",
+        "tone": "solution_oriented",
+        "variables": [
+            "pain point",
+            "industry",
+            "Name",
+            "problem",
+            "how you solve",
+            "result/benefit",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_004",
+        "subject": "We helped [similar company] get [result]",
+        "body": "Hi [Name],\n\nWe recently helped [similar company / competitor] achieve [result] in [time].\nWould you like me to share how we did it and see if it can work for [Company] too?\n\nThanks,\n[Your Name]",
+        "category": "social_proof",
+        "tone": "credibility",
+        "variables": [
+            "similar company",
+            "result",
+            "Name",
+            "time",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_005",
+        "subject": "[Name], quick one",
+        "body": "Hi [Name] —\n\nAre you currently looking to improve [goal] at [company]?\nIf yes, I can share a simple strategy.\n\n– [Your Name]",
+        "category": "short_direct",
+        "tone": "casual",
+        "variables": [
+            "Name",
+            "goal",
+            "company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_006",
+        "subject": "Who handles [topic] at [Company]?",
+        "body": "Hi [Name],\n\nQuick question — who handles [lead gen / marketing / sales / hiring] at [Company]?\nI have an idea that can help with [goal].\n\nThanks!\n[Your Name]",
+        "category": "referral_request",
+        "tone": "polite",
+        "variables": [
+            "topic",
+            "Company",
+            "Name",
+            "goal",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_007",
+        "subject": "Following up, [Name]",
+        "body": "Hi [Name],\n\nJust following up on my last email — is improving [goal] a priority for you right now?\nIf yes, I can share details + a quick plan.\n\nThanks,\n[Your Name]",
+        "category": "follow_up",
+        "tone": "persistent",
+        "variables": [
+            "Name",
+            "goal",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_008",
+        "subject": "Should I close this?",
+        "body": "Hi [Name],\n\nI haven't heard back — totally fine.\nShould I close this request, or would you like to explore improving [goal]?\n\nReply with:\n\n1. Yes, interested\n2. Not now\n3. Not relevant\n\n– [Your Name]",
+        "category": "breakup",
+        "tone": "respectful",
+        "variables": [
+            "Name",
+            "goal",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_009",
+        "subject": "Want a free [audit/review] for [Company]?",
+        "body": "Hi [Name],\n\nIf you'd like, I can do a free [website/ads/linkedin/email funnel] audit for [Company] and point out:\n\n* what's working\n* what's leaking leads\n* 3 steps to improve quickly\n\nWant me to send it?\n\nRegards,\n[Your Name]",
+        "category": "free_value",
+        "tone": "generous",
+        "variables": [
+            "audit/review",
+            "Company",
+            "Name",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_010",
+        "subject": "2 slots available for [month]",
+        "body": "Hi [Name],\n\nWe're taking only 2 new clients this month for [service].\nIf you're looking to improve [goal], we can help you with:\n\n✅ [benefit 1]\n✅ [benefit 2]\n✅ [benefit 3]\n\nWant to book a quick call?\n\nThanks,\n[Your Name]",
+        "category": "scarcity",
+        "tone": "exclusive",
+        "variables": [
+            "month",
+            "Name",
+            "service",
+            "goal",
+            "benefit 1",
+            "benefit 2",
+            "benefit 3",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_011",
+        "subject": "Loved what you're doing at [Company]",
+        "body": "Hi [Name],\n\nI've been following [Company] for a bit — really like the way you [specific compliment].\nQuick one: are you open to exploring ways to improve [goal] this month?\n\n– [Your Name]",
+        "category": "compliment",
+        "tone": "warm",
+        "variables": [
+            "Company",
+            "Name",
+            "specific compliment",
+            "goal",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_012",
+        "subject": "Noticed something on [Company] website",
+        "body": "Hi [Name],\n\nWhile checking [Company], I noticed [specific issue/opportunity].\nThis small change can increase [metric: conversions/leads/bookings] a lot.\n\nWant me to share a quick fix?\n\nThanks,\n[Your Name]",
+        "category": "observation",
+        "tone": "helpful",
+        "variables": [
+            "Company",
+            "Name",
+            "specific issue/opportunity",
+            "metric",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_013",
+        "subject": "Help with [lead gen / sales / appointments]?",
+        "body": "Hi [Name],\n\nWe help [target industry] with:\n\n* getting more qualified leads\n* booking more calls\n* increasing conversion rate\n\nIf you want, I can show you a 10-minute plan for [Company].\nShould I send it?\n\nRegards,\n[Your Name]",
+        "category": "service_intro",
+        "tone": "professional",
+        "variables": [
+            "lead gen / sales / appointments",
+            "Name",
+            "target industry",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_014",
+        "subject": "Quick automation idea for [Company]",
+        "body": "Hi [Name],\n\nAre you using any automation to improve [lead gen/follow-ups/closing] at [Company]?\nWe built a system that automates:\n\n✅ [task 1]\n✅ [task 2]\n✅ [task 3]\n\nWant to see how it works?\n\n– [Your Name]",
+        "category": "automation",
+        "tone": "tech_savvy",
+        "variables": [
+            "Company",
+            "Name",
+            "task 1",
+            "task 2",
+            "task 3",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_015",
+        "subject": "Case study for [industry]",
+        "body": "Hi [Name],\n\nI'm sharing a quick case study:\nHow we helped a [industry] business get [result] in [time].\n\nIf you want, I can break it down into steps and show what can work for [Company].\n\nInterested?\n\nThanks,\n[Your Name]",
+        "category": "case_study",
+        "tone": "educational",
+        "variables": [
+            "industry",
+            "Name",
+            "result",
+            "time",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_016",
+        "subject": "[Competitor] is doing this (worth copying)",
+        "body": "Hi [Name],\n\nI noticed [Competitor] is doing something smart: [strategy].\nThis strategy usually increases [metric] by [range].\n\nWant me to explain how you can apply the same for [Company]?\n\nRegards,\n[Your Name]",
+        "category": "competitive_insight",
+        "tone": "strategic",
+        "variables": [
+            "Competitor",
+            "Name",
+            "strategy",
+            "metric",
+            "range",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_017",
+        "subject": "Made a quick video for you",
+        "body": "Hi [Name],\n\nI recorded a 2-minute video showing 3 ways [Company] can improve [goal].\nShould I send it here?\n\n– [Your Name]",
+        "category": "video_personalization",
+        "tone": "personal",
+        "variables": [
+            "Name",
+            "Company",
+            "goal",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_018",
+        "subject": "10 minutes this week?",
+        "body": "Hi [Name],\n\nCan we do a quick 10-minute call this week?\nI'd like to show you how we can help [Company] improve [metric] using [method].\n\nWhat day works best?\n\nThanks,\n[Your Name]",
+        "category": "meeting_request",
+        "tone": "direct",
+        "variables": [
+            "Name",
+            "Company",
+            "metric",
+            "method",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_019",
+        "subject": "Still relevant?",
+        "body": "Hi [Name],\n\nJust checking — is [goal] still a priority at [Company]?\nIf yes, we can help you get:\n\n✅ [benefit 1]\n✅ [benefit 2]\n✅ [benefit 3]\n\nWant to talk?\n\n– [Your Name]",
+        "category": "re_engagement",
+        "tone": "checking_in",
+        "variables": [
+            "Name",
+            "goal",
+            "Company",
+            "benefit 1",
+            "benefit 2",
+            "benefit 3",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_020",
+        "subject": "Last message from me 🙂",
+        "body": "Hi [Name],\n\nThis will be my last email.\nIf improving [goal] at [Company] is important, happy to help.\nIf not, no worries — just reply \"not now\".\n\nThanks,\n[Your Name]",
+        "category": "final_breakup",
+        "tone": "friendly_exit",
+        "variables": [
+            "Name",
+            "goal",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_021",
+        "subject": "Almost gave up on [goal]",
+        "body": "Hi [Name],\n\nA few months ago, one of our clients told me:\n\"Bro, I think lead generation just doesn't work for us.\"\nThey were spending money, trying methods, no results.\n\nSo we changed just one thing: [one key change].\nWithin [time], they started getting [result].\n\nIf you want, I can share that exact method for [Company].\nWant it?\n\n– [Your Name]",
+        "category": "story_transformation",
+        "tone": "relatable",
+        "variables": [
+            "goal",
+            "Name",
+            "one key change",
+            "time",
+            "result",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_022",
+        "subject": "One mistake costing leads",
+        "body": "Hi [Name],\n\nLast week I reviewed a business similar to [Company].\nTheir marketing looked good, website looked good…\nBut they were losing leads because of one small thing:\n[mistake]\n\nWe fixed it in 30 minutes.\nResults: [result].\n\nIf you want, I can quickly check if [Company] has the same issue.\nShould I?\n\n– [Your Name]",
+        "category": "mistake_identification",
+        "tone": "diagnostic",
+        "variables": [
+            "Name",
+            "Company",
+            "mistake",
+            "result",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_023",
+        "subject": "How we got our first client",
+        "body": "Hi [Name],\n\nWhen we started, we had zero clients.\nWe sent 30 cold emails.\n29 people ignored us.\n\nBut one replied: \"What's your plan?\"\nWe used a simple framework:\n\n1. [step]\n2. [step]\n3. [step]\n\nThat framework still works today and gives consistent leads.\n\nWant me to send it?\n\n– [Your Name]",
+        "category": "origin_story",
+        "tone": "authentic",
+        "variables": [
+            "Name",
+            "step",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_024",
+        "subject": "We wasted money before it worked",
+        "body": "Hi [Name],\n\nA client once told me:\n\"We spent ₹[amount] on ads and got nothing.\"\nWe realized the issue wasn't ads — it was the funnel.\n\nSo we changed [one fix].\nAfter that: [result].\n\nIf you're running ads/marketing, this might be relevant for [Company] too.\nWant to talk?\n\n– [Your Name]",
+        "category": "failure_to_success",
+        "tone": "honest",
+        "variables": [
+            "Name",
+            "amount",
+            "one fix",
+            "result",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_025",
+        "subject": "Got rejected… then this happened",
+        "body": "Hi [Name],\n\nA prospect once said:\n\"Not interested. Don't email again.\"\n\nInstead of pushing, we asked one thing:\n\"What would need to change for it to make sense?\"\nThey replied. We adjusted.\nTwo weeks later, they became a client.\n\nIf you're open, I'd like to ask you the same question:\nWhat would need to change to make [goal] work for [Company]?\n\n– [Your Name]",
+        "category": "objection_reversal",
+        "tone": "consultative",
+        "variables": [
+            "Name",
+            "goal",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_026",
+        "subject": "Weird thing that increased leads",
+        "body": "Hi [Name],\n\nThis sounds funny, but one of our biggest improvements came from something small:\nWe changed [small change].\nNo new ads. No big strategy.\n\nResult: [result].\n\nWant me to tell you what exactly we did? It's easy to apply.\n\n– [Your Name]",
+        "category": "curiosity_hook",
+        "tone": "intriguing",
+        "variables": [
+            "Name",
+            "small change",
+            "result",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_027",
+        "subject": "11:47 PM call changed everything",
+        "body": "Hi [Name],\n\nAt 11:47 PM, a client called panicking:\n\"We need leads ASAP, next week payroll is due.\"\n\nWe built a quick system in 48 hours:\n✅ [method]\n✅ [method]\n✅ [method]\n\nThey booked [X] calls in [time].\n\nIf [Company] needs leads consistently, I can show you the exact setup.\nInterested?\n\n– [Your Name]",
+        "category": "urgency_story",
+        "tone": "dramatic",
+        "variables": [
+            "Name",
+            "method",
+            "X",
+            "time",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_028",
+        "subject": "Their pipeline was silent… until",
+        "body": "Hi [Name],\n\nOne business had a problem:\ntheir inbox was silent — no leads, no calls.\nThey believed: \"our market is dead.\"\n\nBut it wasn't.\nTheir message was wrong.\nWe rewrote it, changed the offer, and targeted better.\nBoom: [result].\n\nIf you want, I can show you how to test this quickly for [Company].\n\n– [Your Name]",
+        "category": "problem_solution",
+        "tone": "empowering",
+        "variables": [
+            "Name",
+            "result",
+            "Company",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_029",
+        "subject": "A 3-line email did it",
+        "body": "Hi [Name],\n\nA client challenged me:\n\"Can you get leads without long emails?\"\n\nWe wrote a 3-line email:\n\"Hey [Name],\nQuick question — are you handling [pain] at [Company]?\nIf yes, I have an idea.\"\n\nThat message alone got [X]% replies.\n\nWant me to customize this for your niche?\n\n– [Your Name]",
+        "category": "simplicity_proof",
+        "tone": "minimalist",
+        "variables": [
+            "Name",
+            "pain",
+            "Company",
+            "X",
+            "Your Name"
+        ]
+    },
+    {
+        "id": "template_030",
+        "subject": "What changed for them",
+        "body": "Hi [Name],\n\nBefore working with us, [industry] business was:\n❌ no leads\n❌ random marketing\n❌ no predictable sales\n\nAfter applying a simple lead engine:\n✅ [result]\n✅ [result]\n✅ predictable pipeline\n\nIf you want, I can show you the blueprint in a short call.\nShould I send details?\n\n– [Your Name]",
+        "category": "before_after",
+        "tone": "transformational",
+        "variables": [
+            "Name",
+            "industry",
+            "result",
+            "Your Name"
+        ]
+    }
+]

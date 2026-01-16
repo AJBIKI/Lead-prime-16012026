@@ -1,0 +1,76 @@
+# Lead Generator - Docker Compose
+# Run: docker-compose up --build
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7
+    container_name: leadgen-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: lead_generator
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Node.js Backend
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: leadgen-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongodb:27017/lead_generator
+      - AI_ENGINE_URL=http://ai-engine:8000
+    env_file:
+      - ./server/.env
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      ai-engine:
+        condition: service_healthy
+    healthcheck:
+      test: wget --no-verbose --tries=1 --spider http://localhost:5000/health || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Python AI Engine
+  ai-engine:
+    build:
+      context: ./ai_engine
+      dockerfile: Dockerfile
+    container_name: leadgen-ai-engine
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./ai_engine/.env
+    healthcheck:
+      test: curl --fail http://localhost:8000/health || exit 1
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+
+volumes:
+  mongodb_data:
+
+# Production Notes:
+# 1. For production, use MongoDB Atlas instead of local container
+# 2. Deploy frontend to Vercel separately (Next.js optimized)
+# 3. Use Railway/Render for backend + ai-engine

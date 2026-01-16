@@ -1,0 +1,21 @@
+Lead Generation Agency App
+
+Building Strategy
+
+-focusing on mvp first
+- one  feature at a time
+-take small steps  but build like ready for scaling easily
+-db part in this project is very crucial make it like further scalable easily
+- not use those  tech stack which is very complicated but no use , like typescript in backend is useless and burden
+-look this is going to be a big project you have to save the log of every tiny detail so that in error you are not hallucinate 
+-from first i will give you my GitHub repo which you will use for backtrack to understand previous working code.
+-check very carefully that  no infinite loop is there anyhow because ai costing is included here .
+-try to use free api for ai in majority of the field but dont compromise where really chatgpt key needed.
+-i will go through every ai agents and ml that will use in this project for better customization in the architecture level of the ai agents because i know ai workflows but for the mvp you can add those agents on your own for initial stage and to understand overall architecture more precisely
+-initial techstacks:- js, react 19.2,next.js 16.1.1,typescript, tailwind css, mongo db, shadcn ui components, vector databases, langchain ,lang-graph , python 3 , ai api providers and other what you need you can add 
+-dont not overdo, if backend can be implemented in js do it on js ; no ts needed.
+-for every sector like, frontend,backend,ml, diff. ai agents should be maintain through branch in GitHub
+- go through all the other files so that you can understand overall prospect.
+
+
+-you can add your own strategies and instructions for better performance and preferable that you add your own strategies to this.
