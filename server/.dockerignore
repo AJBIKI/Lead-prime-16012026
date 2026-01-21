@@ -1,28 +1,46 @@
+# Git
+.git
+.gitignore
+.github
+
 # Dependencies
-node_modules/
-npm-debug.log
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+**/venv
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/pip-log.txt
+**/pip-delete-this-directory.txt
 
-# Environment files (include .env.example only)
+# Environment variables
 .env
-.env.local
-.env.production
+**/.env
+**/.env.*
+!.env.example
 
-# Logs
-logs/
-*.log
+# Next.js build output
+**/.next
+**/out
+**/build
+**/dist
 
-# IDE
-.vscode/
-.idea/
+# IDES
+.vscode
+.idea
 
-# OS
+# System
 .DS_Store
 Thumbs.db
 
-# Git
-.git/
-.gitignore
+# Logs
+logs
+*.log
 
-# Testing
-coverage/
-.nyc_output/
+# Docker
+Dockerfile*
+docker-compose*
+*.md
