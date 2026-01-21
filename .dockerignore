@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+.github
+
+# Dependencies
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+**/venv
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/pip-log.txt
+**/pip-delete-this-directory.txt
+
+# Environment variables
+.env
+**/.env
+**/.env.*
+!.env.example
+
+# Next.js build output
+**/.next
+**/out
+**/build
+**/dist
+
+# IDES
+.vscode
+.idea
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Docker
+Dockerfile*
+docker-compose*
+*.md
